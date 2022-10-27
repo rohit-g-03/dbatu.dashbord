@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Inter, "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #f5f7fb;
+}
+.sidenav{
+    width: 230px;
+    height:100%;
+   padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #192939fb;
+}
+.navlogo{
+      padding-left: 18px;
+      vertical-align: middle;
+      
+}
+
+.navlogo a{
+    color: white;
+    font-size: 17px ;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.menu li{
+    list-style-type:none;
+    margin-top: 22px;
+}
+ .menu li a{
+    color: #76818a;
+    font-size: 15px;
+    font-weight: 550;
+    text-decoration: none; 
+}
+.result-btn{
+    color: #76818a;
+    font-size: 15px;
+    font-weight: 550;
+    border: none;
+    background-color: #23303ffb;
+    cursor: pointer;
+}
+.menu li a:hover{
+    color: #a4b2bc;
+}
+.header{
+    background-color: white;
+   
+    padding: 10px 10px;
+    height: 60px;
+    box-shadow: rgba(33, 37, 41, 0.144) 0px 0px 32px 0px;
+}
+.dropdown{
+    margin: 10px;
+    float: right;
+    color: #2b3035;
+    position: relative;
+    display: inline-block;
+   
+  
+}
+.dropbtn{
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    color: #2b3035;
+    font-size: 15px;
+    cursor: pointer;
+}
+.dropdown-content{
+    background-color: white;
+    margin-left: 45px;
+    color: #2b3035;
+    display: none;
+    position: absolute;
+    min-width: 170px;
+    border: 1px solid rgba(200, 199, 199, 0.748);
+    border-radius: 3px;
+    box-shadow: rgba(33, 37, 41, 0.099) 0px 0px 14px 0px;
+    z-index: 1;
+}
+.dropdown-content a{
+    max-width: 100%;
+    font-size: 14px;
+    color: #2b3035c3;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #dad6d648;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+ 
+}
+
+.dashbord{
+    padding-bottom: 30px;
+    margin: 30px 10px 30px 250px;
+    background-color: white;
+    color: #2b3035;
+    border-radius: 3px;
+    box-shadow:rgba(33, 37, 41, 0.099) 0px 0px 14px 0px ;
+}
+.dashbord-content{
+    padding: 10px 20px ;
+    margin: 10px 20px 20px 20px;
+    font-size: 14px;
+    box-shadow:rgba(33, 37, 41, 0.099) 0px 0px 14px 0px ;
+}
+.dashbord-content .bold{
+    font-size: 13.5px;
+    font-weight: 550;
+    margin: 30px 0px;
+}
+
+/*Results CSS*/
+.results-1{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 300px 10px 30px 250px;
+    background-color: white;
+    color: #2b3035;
+    border-radius: 3px;
+    box-shadow:rgba(33, 37, 41, 0.099) 0px 0px 14px 0px ;
+    text-align: center;
+}
+.results-2{
+
+    padding-bottom: 30px;
+    margin: 30px 10px 30px 250px;
+    background-color: white;
+    color: #2b3035;
+    border-radius: 3px;
+    box-shadow:rgba(33, 37, 41, 0.099) 0px 0px 14px 0px ;
+    text-align: center;
+}
+.show-btn{
+    padding: 8px 15px;
+    color: #3b7ddd;
+    background-color: white;
+    border: 1px solid #3b7ddd;
+    border-radius: 3.2px;
+}
+.show-btn:hover{
+    background-color: #3b7ddd ;
+    color: white;
+}
+.show-btn:focus{
+    box-shadow: 0px 0px 14px 0px rgba(33,37,41,0.05);
+}
+/*table style*/
+.table-1{
+    width: fit-content;
+    height: 380;
+    
+}
+.table-2{
+    width: 100%;
+    margin: 18px 0px 18px 0px;
+}
+table,tr,th,td{
+    border: 1px solid #939ba258;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #495057;
+    
+}
+
+.table-1 th{
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+}
+.table-2 th{
+    height: 75px;
+    vertical-align: middle;
+}
+td{
+  padding: 4px;
+}
+tr:hover{
+    background-color:#939ba20e ;
+}
+
+/*legend CSS*/
+.legend{
+    padding: 15px 15px 30px 15px;
+    margin: 30px 10px 30px 250px;
+    background-color: white;
+    color: #2b3035;
+    border-radius: 3px;
+    box-shadow:rgba(33, 37, 41, 0.099) 0px 0px 14px 0px ; 
+}
+.legend-table{
+    width: 100%;
+
+}
+.legend-table th{
+    padding: 8px;
+    text-align: left;
+
+}
+
+@media screen and (max-width:990px) {
+    .sidenav{
+        display: none;
+    }
+    .dashbord,.results,.header{
+        margin:0px 0px 0px 30px;
+    }
+}
